@@ -55,6 +55,6 @@ makedocs(;
 deploydocs(;
     devbranch="main",
     target="build",
-    repo="github.com/hyrodium/manifold-seminor",
+    repo="github.com/hyrodium/manifold-seminar",
     versions=nothing
 )
