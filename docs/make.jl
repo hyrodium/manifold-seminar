@@ -53,7 +53,7 @@ makedocs(;
 )
 
 deploydocs(;
-    devbranch="main"
+    devbranch="main",
     target="build",
     repo="github.com/hyrodium/hyrodium.github.io/manifold-seminor",
     versions=nothing
