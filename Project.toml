@@ -1,13 +1,15 @@
-name = "HyrodiumHome"
-uuid = "67e7e186-7d6d-4ad4-9306-63d5d0b84fec"
-authors = ["hyrodium <hyrodium@gmail.com> and contributors"]
+name = "HyrodiumSeminar"
+uuid = "a880c70e-2b71-460f-aaa3-d865ddaef76b"
+authors = ["hyrodium <hyrodium@gmail.com>"]
 version = "0.1.0"
 
 [deps]
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+ImageClipboard = "6db54171-f50f-4661-a74f-bc514ef16cee"
+ImageIO = "82e4d734-157c-48bb-816b-45c225c6df19"
 
 [compat]
-Documenter = "0.26, 0.27"
 julia = "1"
 
 [extras]
