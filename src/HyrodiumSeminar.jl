@@ -5,6 +5,8 @@ using Dates
 using ImageIO
 using FileIO
 
+export addimg
+
 function saveimg(date::Date=Date(now()))
     str_date = string(date)
     dir_img = joinpath(@__DIR__, "..", "docs", "src", "img")
