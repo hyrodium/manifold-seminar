@@ -14,7 +14,7 @@ makedocs(;
     modules=[HyrodiumSeminar],
     authors="hyrodium <hyrodium@gmail.com>",
     repo="https://github.com/hyrodium/hyrodium.github.io/blob/{commit}{path}#L{line}",
-    sitename="多様体論セミナー記録",
+    sitename="セミナー記録",
     doctest=false,
     format=Documenter.HTML(;
         prettyurls=true,
