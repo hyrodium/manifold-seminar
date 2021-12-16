@@ -7,9 +7,10 @@ using FileIO
 
 export addimg
 
-function saveimg(date::Date=Date(now()))
+function saveimg(seminar::String, date::Date)
     str_date = string(date)
-    dir_img = joinpath(@__DIR__, "..", "docs", "src", "img")
+    dir_img = joinpath(@__DIR__, "..", "docs", "src", seminar, "img")
+    mkpath(dir_img)
     names = readdir(dir_img)
     names = names[findall(startswith.(names, str_date))]
 
@@ -26,9 +27,10 @@ function saveimg(date::Date=Date(now()))
     return new_name
 end
 
-function addimg(date::Date=Date(now()))
-    new_name = saveimg(date)
-    dir_md = joinpath(@__DIR__, "..", "docs", "src")
+function addimg(seminar::String, date::Date=Date(now()))
+    dir_md = joinpath(@__DIR__, "..", "docs", "src", seminar)
+    mkpath(dir_md)
+    new_name = saveimg(seminar, date)
     path_md = joinpath(dir_md, "$(date).md")
     if !isfile(path_md)
         script = """
