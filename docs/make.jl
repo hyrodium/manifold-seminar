@@ -1,10 +1,14 @@
 using Documenter
 using HyrodiumSeminar
 
-dir_md = joinpath(@__DIR__, "src")
-files_md = [file for file in readdir(dir_md) if startswith(file,"20")]
-pages = [splitext(file)[1]=>file for file in files_md]
-pushfirst!(pages, "Home"=>"index.md")
+pages = Any["Home"=>"index.md"]
+seminars = [("多様体論", "manifold")]
+for (name, dir) in seminars
+    dir_md = joinpath(@__DIR__, "src", dir)
+    files_md = [file for file in readdir(dir_md) if startswith(file,"20")]
+    pages_seminar = [splitext(file)[1]=>joinpath(dir, file) for file in files_md]
+    push!(pages, name=>pages_seminar)
+end
 
 makedocs(;
     modules=[HyrodiumSeminar],
