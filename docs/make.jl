@@ -2,7 +2,7 @@ using Documenter
 using HyrodiumSeminar
 
 pages = Any["Home"=>"index.md"]
-seminars = [("多様体論", "manifold")]
+seminars = [("多様体論", "manifold"), ("圏論", "category-theory")]
 for (name, dir) in seminars
     dir_md = joinpath(@__DIR__, "src", dir)
     files_md = [file for file in readdir(dir_md) if startswith(file,"20")]
