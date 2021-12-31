@@ -17,7 +17,7 @@ REPL上で実行
 ```julia
 # push!(LOAD_PATH, ".")
 using HyrodiumSeminar
-addimg()  # クリップボード上にスクリーンショットがある状態で実行
+addimg("manifold")  # クリップボード上にスクリーンショットがある状態で実行
 ```
 
 ### 日付を指定して更新する場合
@@ -25,5 +25,5 @@ REPL上で実行
 ```julia
 # push!(LOAD_PATH, ".")
 using HyrodiumSeminar, Dates
-addimg(Date(2021,10,02))  # クリップボード上にスクリーンショットがある状態で実行
+addimg("manifold", Date(2021,10,02))  # クリップボード上にスクリーンショットがある状態で実行
 ```
