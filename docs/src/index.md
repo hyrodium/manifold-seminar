@@ -10,4 +10,4 @@
     * 情報幾何学の基礎
 
 ## 圏論
-* 数学原論を読んでいる記録です。
+[Yoshiro Fukui](https://twitter.com/kenjibaiken)さんと数学原論を読んでいるときのメモです。
